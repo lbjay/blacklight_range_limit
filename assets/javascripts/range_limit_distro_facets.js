@@ -19,7 +19,8 @@ jQuery(document).ready(function($) {
   function turnIntoPlot(container) {
     wrapPrepareForFlot($(container), 
       $(container).closest(".range_limit.limit_content"),
-      1/(1.618 * 1), // half a golden rectangle, why not. 
+//      1/(1.618 * 1), // half a golden rectangle, why not. 
+      1, // half a golden rectangle, why not. 
       function(container) {
         areaChart($(container));
       });
